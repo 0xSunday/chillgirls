@@ -15,9 +15,9 @@ const NavBar = () => {
         Chill Girls
       </h2>
 
-      <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-row justify-center items-center z-10">
         <button
-          className="object-contain hidden sm:flex  text-black text-3xl px-10"
+          className="object-contain hidden sm:flex text-black text-3xl px-10"
           onClick={() => {
             setMusic((tog) => {
               return !tog;

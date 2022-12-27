@@ -26,7 +26,7 @@ const MainHeading = () => {
         </button>
       </div>
 
-      <div className="flex flex-[50%] justify-center items-center py-5 ">
+      <div className="flex flex-[50%] justify-center items-center py-5 z-0 ">
         <Image
           className="sm:h-[900px] sm:w-[900px] w-[100%] h-[100%] pb-28 -mt-[140px]"
           src={logo}
