@@ -1,9 +1,60 @@
-import React from 'react'
+import { close, menu } from "../public/assets";
 
-const Navbar = () => {
+import { navLinks } from "../Data";
+
+import Image from "next/image";
+import { use, useState } from "react";
+
+const NavBar = () => {
+  const [tottle, setTottle] = useState(false);
   return (
-    <div>Navbar</div>
-  )
-}
+    <nav className="w-full flex py-6 sm:py-8 sm:px-8 px-4 justify-between items-center navbar text-black bg">
+      <h2 className="md:text-[50px] text-3xl text-black font-bold  font-rubik2 ">Chill Girls</h2>
+      <ul className="list-none hidden sm:flex justify-end items-center flex-1">
+        {navLinks.map((nav, index) => (
+          <li
+            key={nav.id}
+            className={`menu font-poppins font-semibold cursor-pointer text-[20px] text-black hover ${
+              index === navLinks.length - 1 ? "mr-0" : "mr-10"
+            }`}
+          >
+            <a href={`#${nav.id}`}>{nav.title}</a>
+          </li>
+        ))}
+      </ul>
 
-export default Navbar
+      <div className="sm:hidden flex flex-1 justify-end items-center text-black">
+        <Image
+          src={tottle ? close : menu}
+          alt="menu"
+          className="w-[25px] h-[25px] object-contain text-black"
+          onClick={() => {
+            setTottle((tog) => {
+              return !tog;
+            });
+          }}
+        />
+        <div
+          className={`${
+            tottle ? "flex" : "hidden"
+          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar text-black`}
+        >
+          <ul className="list-none flex  justify-end flex-col items-center flex-1  text-black  border-black">
+            {navLinks.map((nav, index) => (
+              <li
+                key={nav.id}
+                className={`font-poppins  cursor-pointer text-[16px] font-semibold text-black hover  ${
+                  index === navLinks.length - 1 ? "mb-0" : "mb-10"
+                }`}
+              >
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default NavBar;

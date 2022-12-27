@@ -2,7 +2,9 @@ import React from 'react'
 
 const MainHeading = () => {
   return (
-    <div>MainHeading</div>
+   <section className='bg h-96 '>
+    hello 
+   </section>
   )
 }
 
