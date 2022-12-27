@@ -2,6 +2,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&family=Source+Code+Pro&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,7 +35,7 @@
 
 .hover {
   --s: 0.2em; /* the thickness of the line */
-  --c: red; /* the color */
+  --c: black; /* the color */
 
   padding-bottom: var(--s);
   background: linear-gradient(90deg, var(--c) 50%, #000 0)
@@ -44,5 +47,5 @@
 }
 .hover:hover {
   --_p: 100%;
-  color: black;
+  color: white;
 }

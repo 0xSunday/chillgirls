@@ -11,13 +11,13 @@ const NavBar = () => {
   const [music, setMusic] = useState(false);
   return (
     <nav className="w-full flex py-6 sm:py-8 sm:px-8 px-4 justify-between items-center navbar text-black bg">
-      <h2 className="md:text-[50px] text-3xl text-black font-bold  font-rubik2 ">
+      <h2 className="md:text-[50px] text-2xl text-black font-bold  font-rubik2 ">
         Chill Girls
       </h2>
 
       <div className="flex flex-row justify-center items-center">
         <button
-          className="object-contain hidden sm:flex text-black text-3xl px-5"
+          className="object-contain hidden sm:flex  text-black text-3xl px-10"
           onClick={() => {
             setMusic((tog) => {
               return !tog;
@@ -66,7 +66,7 @@ const NavBar = () => {
             tottle ? "flex" : "hidden"
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar text-black`}
         >
-          <ul className="list-none flex  justify-end flex-col items-center flex-1  text-black  border-black">
+          <ul className="list-none flex p-4 rounded-3xl  justify-end flex-col items-center flex-1 bg-pink-500 text-black  border-black">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}

@@ -18,7 +18,7 @@ module.exports = {
         rubik: ["Rubik Vinyl", "sans-serif"],
         lobster: ["Lobster", "sans-serif"],
         rubik2: ["Rubik Puddles", "sans-serif"],
-
+        source: ["Source Code Pro", "sans-serif"],
       },
     },
     screens: {
