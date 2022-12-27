@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <nav className="w-full flex py-6 sm:py-8 sm:px-8 px-4 justify-between items-center navbar text-black bg">
-      <h2 className="md:text-[50px] text-2xl text-black font-bold  font-rubik2 ">
+      <h2 className="md:text-[50px] text-3xl text-black font-bold  font-rubik2 ">
         Chill Girls
       </h2>
 
