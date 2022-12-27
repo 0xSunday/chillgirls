@@ -1,5 +1,6 @@
 import { close, menu } from "../public/assets";
-
+import { MdOutlineMusicOff } from "react-icons/md";
+import { MdOutlineMusicNote } from "react-icons/md";
 import { navLinks } from "../Data";
 
 import Image from "next/image";
@@ -7,23 +8,49 @@ import { use, useState } from "react";
 
 const NavBar = () => {
   const [tottle, setTottle] = useState(false);
+  const [music, setMusic] = useState(false);
   return (
     <nav className="w-full flex py-6 sm:py-8 sm:px-8 px-4 justify-between items-center navbar text-black bg">
-      <h2 className="md:text-[50px] text-3xl text-black font-bold  font-rubik2 ">Chill Girls</h2>
-      <ul className="list-none hidden sm:flex justify-end items-center flex-1">
-        {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className={`menu font-poppins font-semibold cursor-pointer text-[20px] text-black hover ${
-              index === navLinks.length - 1 ? "mr-0" : "mr-10"
-            }`}
-          >
-            <a href={`#${nav.id}`}>{nav.title}</a>
-          </li>
-        ))}
-      </ul>
+      <h2 className="md:text-[50px] text-3xl text-black font-bold  font-rubik2 ">
+        Chill Girls
+      </h2>
 
+      <div className="flex flex-row justify-center items-center">
+        <button
+          className="object-contain hidden sm:flex text-black text-3xl px-5"
+          onClick={() => {
+            setMusic((tog) => {
+              return !tog;
+            });
+          }}
+        >
+          {music ? <MdOutlineMusicOff /> : <MdOutlineMusicNote />}
+        </button>
+        <ul className="list-none hidden sm:flex justify-end items-center flex-1">
+          {navLinks.map((nav, index) => (
+            <li
+              key={nav.id}
+              className={`menu font-poppins font-semibold cursor-pointer text-[20px] text-black hover ${
+                index === navLinks.length - 1 ? "mr-0" : "mr-10"
+              }`}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
       <div className="sm:hidden flex flex-1 justify-end items-center text-black">
+        <button
+          className="object-contain sm:hidden text-black text-3xl px-5"
+          onClick={() => {
+            setMusic((tog) => {
+              return !tog;
+            });
+          }}
+        >
+          {music ? <MdOutlineMusicOff /> : <MdOutlineMusicNote />}
+        </button>
+
         <Image
           src={tottle ? close : menu}
           alt="menu"
