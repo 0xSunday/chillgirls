@@ -2,17 +2,16 @@ import { close, menu } from "../public/assets";
 import { MdOutlineMusicOff } from "react-icons/md";
 import { MdOutlineMusicNote } from "react-icons/md";
 import { navLinks } from "../Data";
-// import April from "../public/assets/April.wav";
+// import April from "../public/assets/April.mp3";
 import Image from "next/image";
 import { use, useState } from "react";
+import ReactAudioPlayer from "react-audio-player";
 
 const NavBar = () => {
   const [tottle, setTottle] = useState(false);
   const [music, setMusic] = useState(true);
 
-  // const play = () => {
-  //   new Audio(April).play();
-  // };
+  // <ReactAudioPlayer src={April} autoPlay controls />;
 
   const playMusic = () => {
     setMusic((tog) => {

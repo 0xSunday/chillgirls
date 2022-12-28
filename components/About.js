@@ -3,7 +3,10 @@ import Image from "next/image";
 import nft5 from "../public/nft/nft5.jpg";
 const About = () => {
   return (
-    <section id="about" className="bg flex flex-col flex-1 sm:px-14 px-6 py-10 sm:gap-14 gap-4 justify-center text-center sm:text-start">
+    <section
+      id="about"
+      className="bg flex flex-col flex-1 sm:px-14 px-6 py-10 sm:gap-14 gap-4 justify-center text-center sm:text-start"
+    >
       <div className="flex items-center justify-center">
         <h1 className="sm:text-7xl text-3xl  font-bold font-poppins text-red-900">
           CHILL GIRLS BY CHILL
@@ -18,11 +21,11 @@ const About = () => {
           </p>
           <p className="font-poppins sm:text-[25px] max-w-[500px] font-semibold">
             Chill Girls is a collection of utility enabled NFTS. Chill Girls
-            will provide Physical business profits to the Nft holders.
+            will provide physical business profits to the NFT holders.
           </p>
           <p className="font-poppins sm:text-[25px] max-w-[500px] font-semibold">
             With in few days after mint we will kick off our physical business,
-            which reveneu will be distributed between holder.
+            which revenue will be distributed between holder.
           </p>
 
           <p className="font-poppins text-3xl font-bold text-center">

@@ -85,3 +85,25 @@ export const nftImages = [
     alt: "nft",
   },
 ];
+export const faq = [
+  {
+    qus: "What is the mint price ?",
+    ans: "TBA",
+  },
+  {
+    qus: "When is mint ?",
+    ans: "TBA",
+  },
+  {
+    qus: "How much can i mint ?",
+    ans: "TBA",
+  },
+  {
+    qus: "Is there a WL ?",
+    ans: "yes",
+  },
+  {
+    qus: "Is there a roadmap ?",
+    ans: "Yes, it will be live  soon ",
+  },
+];

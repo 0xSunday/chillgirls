@@ -32,7 +32,7 @@ const NFT = () => {
     </div>
   ));
   return (
-    <section id="nft" className="bg flex flex-col flex-1 sm:px-14 px-6 py-10">
+    <section id="nft" className="bg flex flex-col flex-1 sm:px-14 px-6 py-10 ">
       <div className="flex flex-col justify-center items-center text-center sm:gap-8 gap-5 w-full pb-5 ">
         <h1 className="sm:text-[80px] sm:pb-9 text-3xl font font-poppins  text-red-900 font-bold">
           MEET THE CHILL GIRLS
