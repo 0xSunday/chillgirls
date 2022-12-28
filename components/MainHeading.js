@@ -30,7 +30,7 @@ const MainHeading = () => {
   ];
 
   return (
-    <section className="bg flex flex-col  flex-1 sm:px-14 px-6 py-10">
+    <section className="bg flex flex-col  flex-1 sm:px-14 px-6 py-10 sm:py-10 sm:pt-0">
       <div className=" flex flex-col md:flex-row flex-1 ">
         <div className=" flex flex-[50%] flex-col pt-10 items-start ">
           <h1 className="sm:text-[200px] text-[100px] -mt-20 sm:mt-0 font-bold font-rubik sm:-mb-16 text-pink-800">
