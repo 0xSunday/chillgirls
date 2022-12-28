@@ -23,7 +23,7 @@ const MainHeading = () => {
     <h1>NAIROBI</h1>,
     <h1>HONG KONG</h1>,
     <h1>DUBAI</h1>,
-    <h1>SINGAPUR</h1>,
+    <h1>SINGAPORE</h1>,
     <h1>ROME</h1>,
     <h1>TOKYO</h1>,
     <h1>MOSCOW</h1>,
@@ -46,7 +46,7 @@ const MainHeading = () => {
           <button className=" flex my-5 py-3 px-8 border sm:ml-auto mr-[60px] text-2xl font-bold border-black gap-2 justify-center text-center rounded-3xl items-center hover:bg-pink-900 hover:text-white z-10">
             <a
               className="flex gap-2 justify-center text-center items-center"
-              href="https://discord.gg/sZh3Veaa"
+              href="https://discord.gg/zt8Ra3pKJ8"
             >
               Join <FaDiscord />
             </a>
