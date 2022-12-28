@@ -12,9 +12,8 @@ const MainHeading = () => {
         <h1 className="sm:text-[130px] text-[70px] -mt-10 sm:mt-0 font-bold font-rubik  text-pink-800">
           GIRLS
         </h1>
-        <p className="font-poppins font-semibold py-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
-          officia.
+        <p className="font-poppins font-semibold py-3 l sm:text-3x text-xl">
+          Part of The AVAX Chill Club, Finding Loyal Owners And The Story Begins.
         </p>
         <button className=" flex my-5 py-3 px-8 border sm:ml-auto mr-[60px] text-2xl font-bold border-black gap-2 justify-center text-center rounded-3xl items-center hover:bg-pink-900 hover:text-white z-10">
           <a
