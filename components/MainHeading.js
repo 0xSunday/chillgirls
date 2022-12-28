@@ -4,7 +4,7 @@ import { FaDiscord } from "react-icons/fa";
 import Image from "next/image";
 const MainHeading = () => {
   return (
-    <section className="bg flex flex-col sm:flex-row flex-1 sm:px-14 px-6 py-10">
+    <section className="bg flex flex-col md:flex-row flex-1 sm:px-14 px-6 py-10">
       <div className=" flex flex-[50%] flex-col pt-10 items-start ">
         <h1 className="sm:text-[200px] text-[100px] -mt-20 sm:mt-0 font-bold font-rubik sm:-mb-16 text-pink-800">
           CHILL{" "}
@@ -19,7 +19,7 @@ const MainHeading = () => {
         <button className=" flex my-5 py-3 px-8 border sm:ml-auto mr-[60px] text-2xl font-bold border-black gap-2 justify-center text-center rounded-3xl items-center hover:bg-pink-900 hover:text-white z-10">
           <a
             className="flex gap-2 justify-center text-center items-center"
-            href="https://discord.com/channels/887266551105978369/1024881251666108506"
+            href="https://discord.gg/sZh3Veaa"
           >
             Join <FaDiscord />
           </a>

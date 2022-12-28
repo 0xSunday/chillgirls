@@ -9,19 +9,25 @@ import About from "../components/About";
 import RoadMap from "../components/RoadMap";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
-
+import "react-alice-carousel/lib/alice-carousel.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <MainHeading />
-      <NFT />
-      <About />
-      <RoadMap />
-      <FAQ />
-      <Footer />
-    </div>
+    <>
+      <Head>
+        <title>Chill Girls</title>
+      </Head>
+
+      <div>
+        <Navbar />
+        <MainHeading />
+        <NFT />
+        <About />
+        <RoadMap />
+        <FAQ />
+        <Footer />
+      </div>
+    </>
   );
 }
