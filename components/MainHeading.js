@@ -16,9 +16,9 @@ const MainHeading = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
           officia.
         </p>
-        <button className=" flex my-5 py-3 px-8 border sm:ml-auto mr-[60px] text-2xl font-bold border-black gap-2 justify-center text-center rounded-3xl items-center hover:bg-pink-900 hover:text-white ">
+        <button className=" flex my-5 py-3 px-8 border sm:ml-auto mr-[60px] text-2xl font-bold border-black gap-2 justify-center text-center rounded-3xl items-center hover:bg-pink-900 hover:text-white z-10">
           <a
-            className="flex  gap-2 justify-center text-center items-center"
+            className="flex gap-2 justify-center text-center items-center"
             href="https://discord.com/channels/887266551105978369/1024881251666108506"
           >
             Join <FaDiscord />
