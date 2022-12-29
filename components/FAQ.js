@@ -2,9 +2,12 @@ import React from "react";
 import { faq } from "../Data";
 const FAQ = () => {
   return (
-    <section id="faq" className="bg flex flex-col sm:px-14 px-6 py-10 justify-center text-center ">
+    <section
+      id="faq"
+      className="bg flex flex-col sm:px-14 px-6 py-10 justify-center text-center "
+    >
       <h1 className="sm:text-5xl text-3xl font-bold text-red-900 py-6">
-        Frequently Asked Questions
+        FREQUENTLY ASKED QUESTIONS
       </h1>
       {faq.map((event) => (
         <div className="flex flex-row flex-1 py-5 sm:mx-20 border-t-2 border-red-900 leading-4 gap-4 text-start items-center">

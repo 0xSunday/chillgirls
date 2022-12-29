@@ -15,14 +15,17 @@ const NFT = () => {
     0: {
       items: 2,
     },
-    512: {
+    612: {
+      items: 4,
+    },
+    800: {
       items: 6,
     },
   };
   const items = nftImages.map((nft) => (
-    <div className="flex items-center justify-center px-5">
+    <div className="flex items-center justify-center px-5 zoom">
       <Image
-        className="rounded-2xl my-5"
+        className="rounded-2xl my-5 "
         src={`/${nft.image}`}
         key={nft.id}
         alt={nft.alt}
@@ -32,9 +35,9 @@ const NFT = () => {
     </div>
   ));
   return (
-    <section id="nft" className="bg flex flex-col flex-1 sm:px-14 px-6 py-10 ">
+    <section id="nft" className="bg flex flex-col flex-1 py-14 sm:py-20 px-6 ">
       <div className="flex flex-col justify-center items-center text-center sm:gap-8 gap-5 w-full pb-5 ">
-        <h1 className="sm:text-[80px] sm:pb-9 text-3xl font font-poppins  text-red-900 font-bold">
+        <h1 className="md:text-[80px] sm:pb-9 sm:text-5xl text-3xl font font-poppins  text-red-900 font-bold">
           MEET THE CHILL GIRLS
         </h1>
         <p className=" sm:text-[30px] flex justify-center items-center font-poppins font-semibold sm:max-w-[700px] text-center ">

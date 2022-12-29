@@ -23,8 +23,9 @@ export default function Home() {
         <Navbar />
         <MainHeading />
         <NFT />
-        <About />
         <RoadMap />
+        <About />
+
         <FAQ />
         <Footer />
       </div>

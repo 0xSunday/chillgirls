@@ -12,6 +12,9 @@ const MainHeading = () => {
       items: 3,
     },
     512: {
+      items: 4,
+    },
+    800: {
       items: 6,
     },
   };
@@ -21,7 +24,6 @@ const MainHeading = () => {
     <h1>NEW WORK</h1>,
     <h1>LONDON</h1>,
     <h1>NAIROBI</h1>,
-    <h1>HONG KONG</h1>,
     <h1>DUBAI</h1>,
     <h1>SINGAPORE</h1>,
     <h1>ROME</h1>,
@@ -39,7 +41,7 @@ const MainHeading = () => {
           <h1 className="sm:text-[130px] text-[70px] -mt-10 sm:mt-0 font-bold font-rubik  text-pink-800">
             GIRLS
           </h1>
-          <p className="font-poppins font-semibold py-3 l sm:text-3x text-xl">
+          <p className="font-poppins font-semibold py-3 l sm:text-3x text-xl max-w-[400px]">
             Part of The AVAX Chill Club, Finding Loyal Owners And The Story
             Begins.
           </p>
