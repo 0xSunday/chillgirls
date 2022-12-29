@@ -33,9 +33,9 @@ const MainHeading = () => {
 
   return (
     <section className="bg flex flex-col  flex-1 sm:px-14 px-6 py-10 sm:py-10 sm:pt-0">
-      <div className=" flex flex-col md:flex-row flex-1 ">
+      <div className=" flex flex-col ss:flex-row flex-1 ">
         <div className=" flex flex-[50%] flex-col pt-10 items-start ">
-          <h1 className="sm:text-[200px] text-[100px] -mt-20 sm:mt-0 font-bold font-rubik sm:-mb-16 text-pink-800">
+          <h1 className="md:text-[200px] text-[100px] -mt-20 sm:mt-0 font-bold font-rubik sm:-mb-16 text-pink-800">
             CHILL{" "}
           </h1>
           <h1 className="sm:text-[130px] text-[70px] -mt-10 sm:mt-0 font-bold font-rubik  text-pink-800">
@@ -57,7 +57,7 @@ const MainHeading = () => {
 
         <div className="flex flex-[50%] justify-center items-center py-5 z-0 ">
           <Image
-            className="sm:h-[900px] sm:w-[900px] w-[100%] h-[100%] pb-28 -mt-[140px]"
+            className="md:h-[900px] md:w-[900px] w-[100%] h-[100%] pb-28 -mt-[140px]  "
             src={logo}
             alt="Picture of the author"
             width={800}
@@ -65,7 +65,7 @@ const MainHeading = () => {
           />
         </div>
       </div>
-      <div className="mb-20 sm:-mt-8 -mt-16 ">
+      <div className="mb-20 md:-mt-8 -mt-16 sm:mt-5 ss:mt-5 ">
         <div className="flex items-center justify-center border-black border-2 text-center bg-pink-900 text-white p-1 sm:p-2 rounded-2xl -rotate-12">
           <AliceCarousel
             infinite

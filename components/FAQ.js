@@ -11,12 +11,12 @@ const FAQ = () => {
       </h1>
       {faq.map((event) => (
         <div className="flex flex-row flex-1 py-5 sm:mx-20 border-t-2 border-red-900 leading-4 gap-4 text-start items-center">
-          <div className="flex sm:flex-[50%] flex-[60%] ">
+          <div className="flex sm:flex-[50%] flex-[67%] ">
             <p className="font-poppins font-semibold sm:text-3xl ">
               {event.qus}
             </p>
           </div>
-          <div className="flex sm:flex-[50%] flex-[40%] sm:text-3xl">
+          <div className="flex sm:flex-[50%] flex-[33%] sm:text-3xl">
             <p>{event.ans}</p>
           </div>
         </div>
