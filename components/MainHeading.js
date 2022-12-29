@@ -41,7 +41,7 @@ const MainHeading = () => {
           <h1 className="sm:text-[130px] text-[70px] -mt-10 sm:mt-0 font-bold font-rubik  text-pink-800">
             GIRLS
           </h1>
-          <p className="font-poppins font-semibold py-3 l sm:text-3x text-xl max-w-[400px]">
+          <p className="font-poppins font-semibold py-3 l sm:text-3x text-xl max-w-[400px] md:max-w-full">
             Part of The AVAX Chill Club, Finding Loyal Owners And The Story
             Begins.
           </p>
