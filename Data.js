@@ -1,14 +1,3 @@
-// import nft1 from "./public/assets/nft/nft1.jpg";
-// import nft2 from "./public/assets/nft/nft2.jpg";
-// import nft3 from "./public/assets/nft/nft3.jpg";
-// import nft4 from "./public/assets/nft/nft4.jpg";
-// import nft5 from "./public/assets/nft/nft5.jpg";
-// import nft6 from "./public/assets/nft/nft6.jpg";
-// import nft7 from "./public/assets/nft/nft7.jpg";
-// import nft8 from "./public/assets/nft/nft8.jpg";
-// import nft9 from "./public/assets/nft/nft9.jpg";
-// import nft10 from "./public/assets/nft/nft10.jpg";
-
 export const navLinks = [
   {
     id: "nft",
@@ -19,10 +8,10 @@ export const navLinks = [
     id: "about",
     title: "About",
   },
-  {
-    id: "utility",
-    title: "Utility",
-  },
+  // {
+  //   id: "utility",
+  //   title: "Utility",
+  // },
   {
     id: "faq",
     title: "FAQ",
@@ -107,3 +96,4 @@ export const faq = [
     ans: "Yes, it will be live  soon ",
   },
 ];
+

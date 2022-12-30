@@ -23,14 +23,14 @@ const NFT = () => {
     },
   };
   const items = nftImages.map((nft) => (
-    <div className="flex items-center justify-center px-5 zoom">
+    <div className="flex items-center justify-center px-5 zoom  py-16">
       <Image
-        className="rounded-2xl my-5 "
+        className="rounded-2xl my-10  "
         src={`/${nft.image}`}
         key={nft.id}
         alt={nft.alt}
-        width={200}
-        height={200}
+        width={600}
+        height={600}
       />
     </div>
   ));
@@ -51,6 +51,7 @@ const NFT = () => {
           Chill Girl, you hold power backed by thousands of family members.
         </p>
       </div>
+      
       <AliceCarousel
         mouseTracking
         infinite

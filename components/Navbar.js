@@ -1,11 +1,9 @@
 import { close, menu } from "../public/assets";
 import { MdOutlineMusicOff } from "react-icons/md";
 import { MdOutlineMusicNote } from "react-icons/md";
-import { navLinks } from "../Data";
-// import April from "../public/assets/April.mp3";
+import { navLinks,Audio } from "../Data";
 import Image from "next/image";
-import { use, useState } from "react";
-import ReactAudioPlayer from "react-audio-player";
+import { useState } from "react";
 
 const NavBar = () => {
   const [tottle, setTottle] = useState(false);
@@ -19,6 +17,7 @@ const NavBar = () => {
     });
   };
 
+ 
   return (
     <nav className="w-full flex py-6 sm:py-8 sm:px-8 px-4 justify-between items-center navbar text-black bg">
       <h2>
@@ -55,7 +54,7 @@ const NavBar = () => {
           className="object-contain sm:hidden text-black text-3xl px-5"
           onClick={playMusic}
         >
-          {music ? <MdOutlineMusicOff /> : <MdOutlineMusicNote />}
+          {music ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}
         </button>
 
         <Image
