@@ -91,9 +91,6 @@ export const faq = [
     qus: "Is there a WL ?",
     ans: "yes",
   },
-  {
-    qus: "Is there a roadmap ?",
-    ans: "Yes, it will be live  soon ",
-  },
+
 ];
 
