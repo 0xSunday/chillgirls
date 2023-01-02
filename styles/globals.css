@@ -9,6 +9,31 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(226, 223, 225, 1) 0%,
+    rgba(216, 206, 216, 1) 50%,
+    rgba(196, 150, 191, 1) 99%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(226, 223, 225, 1) 0%,
+    rgba(216, 206, 216, 1) 50%,
+    rgba(196, 150, 191, 1) 99%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(226, 223, 225, 1) 0%,
+    rgba(216, 206, 216, 1) 50%,
+    rgba(196, 150, 191, 1) 99%
+  );
+
+}
 .bg {
   /* ff 3.6+ */
   background: -moz-linear-gradient(

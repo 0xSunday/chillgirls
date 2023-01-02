@@ -1,7 +1,7 @@
 import { close, menu } from "../public/assets";
 import { MdOutlineMusicOff } from "react-icons/md";
 import { MdOutlineMusicNote } from "react-icons/md";
-import { navLinks,Audio } from "../Data";
+import { navLinks, Audio } from "../Data";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -17,7 +17,6 @@ const NavBar = () => {
     });
   };
 
- 
   return (
     <nav className="w-full flex py-6 sm:py-8 sm:px-8 px-4 justify-between items-center navbar text-black bg">
       <h2>
@@ -30,17 +29,21 @@ const NavBar = () => {
       </h2>
 
       <div className="flex flex-row justify-center items-center z-10">
-        <button
+        <h2 className=" sm:block hidden font-poppins font-bold cursor-pointer text-[20px] text-black hover mr-10">
+          <a href="/wl">White List</a>
+        </h2>
+
+        {/* <button
           className="object-contain hidden sm:flex text-black text-3xl px-10"
           onClick={playMusic}
         >
           {music ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}
-        </button>
+        </button> */}
         <ul className="list-none hidden sm:flex justify-end items-center flex-1">
           {navLinks.map((nav, index) => (
             <li
               key={nav.id}
-              className={`menu font-poppins font-semibold cursor-pointer text-[20px] text-black hover ${
+              className={`menu font-poppins flex justify-center items-center font-semibold cursor-pointer text-[20px] text-black hover ${
                 index === navLinks.length - 1 ? "mr-0" : "mr-10"
               }`}
             >
@@ -50,12 +53,15 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="sm:hidden flex flex-1 justify-end items-center text-black">
-        <button
+      <h2 className=" sm:hidden  font-poppins font-bold cursor-pointer text-[20px] text-black hover mr-3 border-2 p-1  border-black rounded-xl">
+          <a href="/wl">WhiteList</a>
+        </h2>
+        {/* <button
           className="object-contain sm:hidden text-black text-3xl px-5"
           onClick={playMusic}
         >
           {music ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}
-        </button>
+        </button> */}
 
         <Image
           src={tottle ? close : menu}
