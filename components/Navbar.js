@@ -1,20 +1,26 @@
+import { MdOutlineMusicNote, MdOutlineMusicOff } from "react-icons/md";
+import { navLinks } from "../Data";
 import { close, menu } from "../public/assets";
-import { MdOutlineMusicOff } from "react-icons/md";
-import { MdOutlineMusicNote } from "react-icons/md";
-import { navLinks, Audio } from "../Data";
+
 import Image from "next/image";
-import { useState } from "react";
+// import April from "../public/April.mp3";
+import { useRef, useState } from "react";
 
 const NavBar = () => {
   const [tottle, setTottle] = useState(false);
-  const [music, setMusic] = useState(true);
+  const [music, setMusic] = useState(false);
 
   // <ReactAudioPlayer src={April} autoPlay controls />;
-
+  const audioPlayer = useRef();
   const playMusic = () => {
     setMusic((tog) => {
       return !tog;
     });
+    if (music) {
+      audioPlayer.current.pause();
+    } else {
+      audioPlayer.current.play();
+    }
   };
 
   return (
@@ -22,23 +28,26 @@ const NavBar = () => {
       <h2>
         <a
           href="/"
-          className="md:text-[50px] text-3xl text-black font-bold  font-rubik2 "
+          className="md:text-[50px] text-3xl text-black font-bold  font-rubik2 pr-5"
         >
           Chill Girls
         </a>
       </h2>
 
       <div className="flex flex-row justify-center items-center z-10">
-        <h2 className=" sm:block hidden font-poppins font-bold cursor-pointer text-[20px] text-black hover mr-10">
-          <a href="/wl">White List</a>
-        </h2>
+        <audio ref={audioPlayer} src="/April.mp3" autoplay></audio>
 
-        {/* <button
+        <button
           className="object-contain hidden sm:flex text-black text-3xl px-10"
           onClick={playMusic}
         >
           {music ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}
-        </button> */}
+        </button>
+
+        <h2 className=" sm:block hidden font-poppins font-bold cursor-pointer text-[20px] text-black hover mr-10">
+          <a href="/wl">White List</a>
+        </h2>
+
         <ul className="list-none hidden sm:flex justify-end items-center flex-1">
           {navLinks.map((nav, index) => (
             <li
@@ -53,15 +62,15 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="sm:hidden flex flex-1 justify-end items-center text-black">
-      <h2 className=" sm:hidden  font-poppins font-bold cursor-pointer text-[20px] text-black hover mr-3 border-2 p-1  border-black rounded-xl">
-          <a href="/wl">WhiteList</a>
-        </h2>
-        {/* <button
-          className="object-contain sm:hidden text-black text-3xl px-5"
+        <button
+          className="object-contain sm:hidden  text-black text-3xl pl-5 mr-3"
           onClick={playMusic}
         >
           {music ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}
-        </button> */}
+        </button>
+        <h2 className=" sm:hidden  font-poppins font-bold cursor-pointer text-[20px] text-black hover mr-3 border-2 p-1  border-black rounded-xl">
+          <a href="/wl">WhiteList</a>
+        </h2>
 
         <Image
           src={tottle ? close : menu}

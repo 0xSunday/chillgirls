@@ -5,7 +5,7 @@ import { BsTwitter } from "react-icons/bs";
 import { AiTwotoneMail } from "react-icons/ai";
 import Link from "next/link";
 import Confetti from "react-confetti";
-// import Footer from "../../components/Footer";
+// import 
 const index = () => {
   const [wl, setWl] = useState("");
   const [address, setAddress] = useState("");
