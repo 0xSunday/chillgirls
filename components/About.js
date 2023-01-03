@@ -9,18 +9,18 @@ const About = () => {
     >
       <div className="flex items-center justify-center">
         <h1 className="md:text-7xl text-3xl sm:text-5xl  font-bold font-poppins text-red-900">
-          CHILL GIRLS BY CHILL
+          Sakura Dreams BY CHILL
         </h1>
       </div>
 
       <div className="flex flex-col sm:flex-row flex-1 justify-center items-center sm:gap-8 gap-4">
         <div className="flex flex-col gap-4 ">
           <p className="font-poppins sm:text-[25px] max-w-[500px] font-semibold">
-            Chill Girls is the genesis NFT collection created by Chill, and
+            Sakura Dreams is the genesis NFT collection created by Chill, and
             represents Chill first major step into the world of web3.
           </p>
           {/* <p className="font-poppins sm:text-[25px] max-w-[500px] font-semibold">
-            Chill Girls is a collection of utility enabled NFTS. Chill Girls
+            Sakura Dreams is a collection of utility enabled NFTS. Sakura Dreams
             will provide physical business profits to the NFT holders.
           </p>
           <p className="font-poppins sm:text-[25px] max-w-[500px] font-semibold">

@@ -5,7 +5,7 @@ import { BsTwitter } from "react-icons/bs";
 import { AiTwotoneMail } from "react-icons/ai";
 import Link from "next/link";
 import Confetti from "react-confetti";
-// import 
+// import
 const index = () => {
   const [wl, setWl] = useState("");
   const [address, setAddress] = useState("");
@@ -50,7 +50,7 @@ const index = () => {
               href="/"
               className="md:text-[50px] text-3xl text-black font-bold  font-rubik2 "
             >
-              Chill Girls
+              Sakura Dreams
             </a>
           </h2>
         </nav>

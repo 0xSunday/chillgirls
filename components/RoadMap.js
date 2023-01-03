@@ -5,7 +5,11 @@ const RoadMap = () => {
   return (
     <section
       id="utility"
-      className="bg flex flex-col flex-1 sm:px-14 px-6 py-14 sm:py-20 sm:gap-14 gap-4 justify-center text-center sm:text-start"
+      className="bg flex flex-col flex-1 
+      
+      
+      
+      sm:gap-14 gap-4 justify-center text-center sm:text-start"
     >
       <div className="flex items-center justify-center">
         <h1 className="md:text-7xl text-3xl sm:text-5xl  font-bold font-poppins text-red-900">
@@ -25,7 +29,7 @@ const RoadMap = () => {
         </div>
         <div className="flex flex-col gap-4 ">
           <p className="font-poppins sm:text-[25px] max-w-[500px] font-semibold">
-            Chill Girls originated on the Avalanche Blockchain. Our goal is to
+            Sakura Dreams originated on the Avalanche Blockchain. Our goal is to
             integrate web2 and web3 through real life businesses and share the
             profits to the holders
           </p>

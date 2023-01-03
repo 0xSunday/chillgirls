@@ -24,13 +24,17 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="w-full flex py-6 sm:py-8 sm:px-8 px-4 justify-between items-center navbar text-black bg">
+    <nav className="w-full flex py-6 sm:py-8  sm:px-14 px-6 justify-between items-center navbar text-black bg">
       <h2>
         <a
           href="/"
           className="md:text-[50px] text-3xl text-black font-bold  font-rubik2 pr-5"
         >
-          Chill Girls
+          Sakura
+          <span className="hidden sm:">
+            <br />
+          </span>
+          Dreams
         </a>
       </h2>
 
@@ -38,7 +42,7 @@ const NavBar = () => {
         <audio ref={audioPlayer} src="/April.mp3" autoplay></audio>
 
         <button
-          className="object-contain hidden sm:flex text-black text-3xl px-10"
+          className="object-contain hidden sm:flex text-black text-3xl px-10 "
           onClick={playMusic}
         >
           {music ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}
@@ -63,7 +67,7 @@ const NavBar = () => {
       </div>
       <div className="sm:hidden flex flex-1 justify-end items-center text-black">
         <button
-          className="object-contain sm:hidden  text-black text-3xl pl-5 mr-3"
+          className="object-contain sm:hidden  text-black text-3xl  mr-3"
           onClick={playMusic}
         >
           {music ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}

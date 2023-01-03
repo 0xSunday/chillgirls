@@ -35,14 +35,14 @@ const MainHeading = () => {
     <section className="bg flex flex-col  flex-1 sm:px-14 px-6 py-10 sm:py-10 sm:pt-0 ">
       <div className=" flex flex-col ss:flex-row flex-1 ">
         <div className=" flex flex-[50%] flex-col pt-10 items-start ">
-          <h1 className="md:text-[200px] text-[100px] -mt-20 sm:mt-0 font-bold font-rubik sm:-mb-16 text-pink-800">
-            CHILL{" "}
+          <h1 className="md:text-[160px] text-[80px] -mt-20 sm:mt-0 font-bold font-rubik sm:-mb-10 text-pink-800">
+             Sakura{" "}
           </h1>
-          <h1 className="sm:text-[130px] text-[70px] -mt-10 sm:mt-0 font-bold font-rubik  text-pink-800">
-            GIRLS
+          <h1 className="md:text-[130px] text-[60px] -mt-7 sm:mt-0 font-bold font-rubik  text-pink-800">
+             Dreams
           </h1>
           <p className="font-poppins font-semibold py-3 l sm:text-3x text-xl max-w-[400px] md:max-w-full">
-            Part of The AVAX Chill Club, Finding Loyal Owners And The Story
+            Part of The AVAX Sakura Club, Finding Loyal Owners And The Story
             Begins.
           </p>
           <button className=" flex my-5 py-3 px-8 border sm:ml-auto mr-[60px] text-2xl font-bold border-black gap-2 justify-center text-center rounded-3xl items-center hover:bg-pink-900 hover:text-white z-10">

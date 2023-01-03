@@ -20,6 +20,13 @@ module.exports = {
         rubik2: ["Rubik Puddles", "sans-serif"],
         source: ["Source Code Pro", "sans-serif"],
       },
+      wiggle: {
+        "0%, 100%": { transform: "rotate(-3deg)" },
+        "50%": { transform: "rotate(3deg)" },
+      },
+    },
+    animation: {
+      wiggle: "wiggle 200ms ease-in-out",
     },
     screens: {
       xs: "480px",
