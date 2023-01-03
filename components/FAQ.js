@@ -6,7 +6,7 @@ const FAQ = () => {
       id="faq"
       className="bg flex flex-col sm:px-14 px-6 py-10 justify-center text-center "
     >
-      <h1 className="sm:text-5xl text-3xl font-bold text-red-900 py-6">
+      <h1 className="md:text-[60px] text-3xl sm:text-4xl font-bold text-red-900 py-6">
         FREQUENTLY ASKED QUESTIONS
       </h1>
       {faq.map((event) => (
