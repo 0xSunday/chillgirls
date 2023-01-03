@@ -31,10 +31,7 @@ const NavBar = () => {
           className="md:text-[50px] text-3xl text-black font-bold  font-rubik2 pr-5"
         >
           Sakura
-          <span className="hidden sm:">
-            <br />
-          </span>
-          Dreams
+          <br className="block sm:hidden" /> Dreams
         </a>
       </h2>
 
