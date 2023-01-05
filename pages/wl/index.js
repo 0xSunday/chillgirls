@@ -90,7 +90,7 @@ const index = () => {
           <BsDiscord />
         </Link>
         <Link
-          href="https://twitter.com/Chill_Girls"
+          href="https://twitter.com/SakuraDreamsNFT"
           className="text-3xl  text-pink-900  hover:text-black"
         >
           <BsTwitter />

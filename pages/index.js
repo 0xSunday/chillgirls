@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <link rel="shotcut icon" href="/logo2.png" />
         <title>Sakura Dreams</title>
       </Head>
 

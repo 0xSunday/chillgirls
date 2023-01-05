@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../public/assets/logo.png";
+import logo2 from "../public/logo2.png";
 import { FaDiscord } from "react-icons/fa";
 import Image from "next/image";
 
@@ -33,12 +33,12 @@ const MainHeading = () => {
 
   return (
     <section className="bg flex flex-col  flex-1 sm:px-14 px-6 py-10 sm:py-10 sm:pt-0 ">
-      <div className=" flex flex-col ss:flex-row flex-1 ">
-        <div className=" flex flex-[50%] flex-col pt-10 items-start ">
-          <h1 className="md:text-[140px] text-[70px] -mt-20 sm:mt-0 font-bold font-rubik sm:-mb-10 text-pink-800">
+      <div className=" flex flex-col sm:flex-row flex-1 sm:-mt-10 ">
+        <div className=" flex flex-[50%] flex-col pt-10 items-start sm:pt-32 ">
+          <h1 className="md:text-[140px]   text-[70px] -mt-20 sm:mt-0 font-bold font-rubik sm:-mb-10 text-pink-800">
             SAKURA
           </h1>
-          <h1 className="md:text-[120px] text-[60px] -mt-7 sm:mt-0 font-bold font-rubik  text-pink-800">
+          <h1 className="md:text-[120px]  text-[60px] -mt-7 sm:mt-0 font-bold font-rubik  text-pink-800">
             DREAMS
           </h1>
           <p className="font-poppins font-semibold py-3 l sm:text-3x text-xl max-w-[400px] md:max-w-full">
@@ -55,17 +55,18 @@ const MainHeading = () => {
           </button>
         </div>
 
-        <div className="flex flex-[50%] justify-center items-center py-5 z-0 ">
+        <div className="flex flex-[50%] justify-center items-center py-5 z-0 -mt-10 sm:mt-0">
           <Image
-            className="md:h-[900px] md:w-[900px] w-[100%] h-[100%] pb-28 -mt-[140px]  "
-            src={logo}
+            // className="md:h-[90%] md:w-[90%] w-[100%] h-[100%] pb-28  "
+            className="w-[100%] h-[100%] relative z-[5] mt-8 sm:mt-0 "
+            
+            src={logo2}
             alt="Picture of the author"
-            width={800}
-            height={800}
+           
           />
         </div>
       </div>
-      <div className="mb-20 md:-mt-8 -mt-16 sm:mt-5 ss:mt-5 ">
+      <div className="mb-20 md:mt-10  sm:mt-10 ss:mt-5 flex-[50%] ">
         <div className="flex items-center justify-center border-black border-2 text-center bg-pink-900 text-white p-1 sm:p-2 rounded-2xl -rotate-12">
           <AliceCarousel
             infinite
