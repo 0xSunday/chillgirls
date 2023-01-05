@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Chill Girls</title>
+        <title>Sakura Dreams</title>
       </Head>
 
       <div>
