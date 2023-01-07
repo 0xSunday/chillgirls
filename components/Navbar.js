@@ -1,27 +1,27 @@
 import { MdOutlineMusicNote, MdOutlineMusicOff } from "react-icons/md";
 import { navLinks } from "../Data";
 import { close, menu } from "../public/assets";
-
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 // import April from "../public/April.mp3";
-import { useRef, useState } from "react";
 
 const NavBar = () => {
   const [tottle, setTottle] = useState(false);
-  const [music, setMusic] = useState(false);
 
-  // <ReactAudioPlayer src={April} autoPlay controls />;
-  const audioPlayer = useRef();
-  const playMusic = () => {
-    setMusic((tog) => {
-      return !tog;
-    });
-    if (music) {
-      audioPlayer.current.pause();
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  useEffect(() => {
+    if (isPlaying) {
+      audioRef.current.play();
     } else {
-      audioPlayer.current.play();
+      audioRef.current.pause();
     }
-  };
+  }, [isPlaying]);
+
+  function toggleMusic() {
+    setIsPlaying(!isPlaying);
+  }
 
   return (
     <nav className="w-full flex py-6 sm:py-8  sm:px-14 px-6 justify-between items-center navbar text-black bg">
@@ -36,13 +36,15 @@ const NavBar = () => {
       </h2>
 
       <div className="flex flex-row justify-center items-center z-10">
-        <audio ref={audioPlayer} src="/April.mp3" autoplay></audio>
+        <audio ref={audioRef} src="/April.mp3" autoPlay>
+          <track kind="captions" />
+        </audio>
 
         <button
           className="object-contain hidden sm:flex text-black text-3xl px-10 "
-          onClick={playMusic}
+          onClick={toggleMusic}
         >
-          {music ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}
+          {isPlaying ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}
         </button>
 
         <h2 className=" sm:block hidden font-poppins font-bold cursor-pointer text-[20px] text-black hover mr-10">
@@ -64,10 +66,10 @@ const NavBar = () => {
       </div>
       <div className="sm:hidden flex flex-1 justify-end items-center text-black">
         <button
-          className="object-contain sm:hidden  text-black text-3xl  mr-3"
-          onClick={playMusic}
+          className="object-contain hidden sm:flex text-black text-3xl px-10 "
+          onClick={toggleMusic}
         >
-          {music ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}
+          {isPlaying ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}
         </button>
         <h2 className=" sm:hidden  font-poppins font-bold cursor-pointer text-[20px] text-black hover mr-3 border-2 p-1  border-black rounded-xl">
           <a href="/wl">WhiteList</a>
