@@ -66,7 +66,7 @@ const NavBar = () => {
       </div>
       <div className="sm:hidden flex flex-1 justify-end items-center text-black">
         <button
-          className="object-contain hidden sm:flex text-black text-3xl px-10 "
+          className="object-contain sm:hidden flex text-black text-3xl px-2 "
           onClick={toggleMusic}
         >
           {isPlaying ? <MdOutlineMusicNote /> : <MdOutlineMusicOff />}
